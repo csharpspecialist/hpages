@@ -59,6 +59,24 @@ tbody tr:nth-child(odd) {
    background-color: #ccc;
 }
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+
 </style>
 
 
@@ -77,12 +95,22 @@ tbody tr:nth-child(odd) {
 
 <input type="button" class="button" value="Input Button">
 
-
+<!--
 <footer>
   <p>Posted by: Big Daddy Productions</p>
   <p>Contact information: <a href="http://www.nfl.com">
   nfl.com</a>.</p>
 </footer>
+  -- >
+
+<div class="wrapper">
+
+  just writing things for the footer
+
+  <div class="push"></div>
+</div>
+<footer class="footer"></footer>
+
 
 
   </body>
